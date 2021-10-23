@@ -1,0 +1,23 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Suisse Regular", helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,
+html {
+  background-color: #fffef2;
+}
+h2 {
+  font-weight: 400;
+}
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}

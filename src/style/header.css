@@ -1,0 +1,190 @@
+.header-container {
+  background-image: url("../style/images/header/Aesop_Geranium_Leaf_Range_2021_Shopify_Banner_UAE_2880x1780px_9faba857-fc9e-4921-916a-26a975ae0657_1950x.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-position: 50% 100%;
+  background-clip: border-box;
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 55px;
+}
+header {
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+  opacity: 0.3;
+}
+nav {
+  display: flex;
+  padding: 20px 40px;
+  position: relative;
+}
+nav div {
+  flex-basis: 50%;
+}
+nav div:first-child {
+  text-align: left;
+}
+nav div:last-child {
+  text-align: right;
+}
+.header-icon {
+  width: calc(8em / 16);
+  height: calc(8em / 16);
+  margin-left: 0.5rem;
+}
+.announcement-container {
+  background-color: #252525;
+  padding: 2px;
+  z-index: 10;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+}
+.announcement-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  line-height: 1.7;
+  padding: 0 22px;
+}
+@media (min-width: 750px) {
+  .announcement-text {
+    padding: 0 55px;
+  }
+}
+.nav-btn {
+  margin: 10px;
+  padding: 0;
+  padding-bottom: 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-family: "Suisse Medium" !important;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.circle {
+  background-color: #252525;
+  border-radius: 100%;
+  content: "";
+  transform: none;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  height: 8px;
+  width: 8px;
+  margin-bottom: 2px;
+}
+.nav-btn:hover {
+  border-bottom: 1px solid white;
+}
+.introduction {
+  position: relative;
+  padding: 0 8% 3.6% 16%;
+  width: calc(99% * 6 / 12);
+  margin-top: 108px;
+  padding-bottom: 240px;
+  text-align: left;
+  color: white;
+}
+@media (max-width: 1024px) {
+  header {
+    height: 47vh;
+    margin-bottom: 261px;
+  }
+  .introduction {
+    flex-basis: auto;
+    margin-left: 0;
+    width: 100%;
+    padding: 45vh 20% 0;
+    position: absolute;
+  }
+  .introduction h2,
+  .introduction p {
+    color: black;
+  }
+}
+@media (max-width: 840px) {
+  header {
+    margin-bottom: 350px;
+  }
+}
+.intro-h2 {
+  font-size: 30px;
+  padding-bottom: 0;
+  margin: 0;
+  font-weight: 500;
+}
+.introduction p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.discover-btn {
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  min-width: 210px;
+  margin-top: 27.5px;
+  letter-spacing: 0;
+  font-size: 14px;
+  padding: 27px 23px;
+  text-transform: none;
+  background-color: #333;
+  transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1),
+    background-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.discover-btn:hover {
+  background-color: #000;
+}
+.svg {
+  fill: white;
+}
+.navLogo {
+  height: 38px;
+  left: 40px;
+  position: absolute;
+  top: 222px;
+  width: 100px;
+}
+.nav-mobile {
+  display: none;
+}
+@media (max-width: 749px) {
+  .nav-mobile {
+    display: flex;
+  }
+  .nav-desk {
+    display: none;
+  }
+  .navLogo {
+    display: none;
+  }
+  .svg {
+    fill: black;
+    width: 100px;
+  }
+  .nav-btn {
+    color: black;
+  }
+}
+@media (max-width: 641px) {
+  header {
+    height: 33vh;
+  }
+  .introduction {
+    padding: 30vh 0 0 20px;
+  }
+}
